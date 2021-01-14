@@ -45,7 +45,7 @@
 .gallery-section .gallery {
   display: flex;
   flex-wrap: wrap;
-  padding-left: 135px;
+  margin:40px;
   /*영역 내 여러 줄 배치*/
 }
 .mission {
@@ -131,7 +131,7 @@
 .image_overlay {
   position: absolute;
   top: 0px;
-  left: 0px;
+  left: 1px;
   width: 200px;
   height: 200px;
 
