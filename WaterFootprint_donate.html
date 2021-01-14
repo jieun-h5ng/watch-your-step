@@ -7,13 +7,18 @@
 
     <link rel="stylesheet" href="css_js/style.css" type="text/css">
     <link rel="stylesheet" href="css_js/testStyle1.css" type="text/css">
+    <script src="css_js/sound.js" defer></script>
 
     <link rel="preconnect" href="https://fonts.gstatic.com">
+    <link
+        href="https://fonts.googleapis.com/css2?family=Noto+Sans+KR:wght@100;300;400;500;700;900&family=Roboto:ital,wght@0,100;0,300;0,400;0,500;0,700;0,900;1,100;1,300;1,400;1,500;1,700;1,900&display=swap"
+        rel="stylesheet">
   
-    <script src="css_js/main.js"></script>
+    
     <script src="css_js/jquery-1.12.4.min.js"></script>
 
     <script>
+        $ = jquery; 
         // 후원하기 누름
         $(document).ready(function () {
             $(".donate").click(function () {
@@ -42,7 +47,7 @@
                 setTimeout(() => {
                     $("#dmodal").css("display", "block");                    
                     
-                }, 2500);
+                }, 500);
             });
             // 확인
             $("#check").click(function () {
@@ -121,7 +126,7 @@
             <!-- <i class="fas fa-tint"></i> -->
 
             <img src="images/waterdrop.png" id="waterdrop">
-            <audio id="player" loop>
+            <audio id="player">
                 <source src="images/WaterDrop.mp4" />
             </audio>
 
@@ -150,6 +155,17 @@
             </ul>
         </nav>
     </header>
+    <script>
+        const toggleBtn = document.querySelector('.index_bar');
+const menu = document.querySelector('.index_menu');
+
+toggleBtn.addEventListener('click', () => {
+   menu.classList.toggle('active');
+})
+    </script>
+    
+
+
     <section class="mouse">
         <div id="cursor"></div>
         <script>
@@ -242,7 +258,7 @@
 
                     <label><input type="checkbox" name="donate" value="month"> 정기후원</label>
                     <br />
-
+                    <br>
                     <button class="donate">후원하기</button>
                     <!-- 테스트 -->
                     <!-- <button class="btn">후원하기</button> -->
@@ -255,7 +271,7 @@
     <div class="umodal">
         <div class="umodal_content">
             <h2>후원자 기본 정보 입력</h2>
-                <br />
+               
                 <ul>
                     <li>
                         <label class="payinfo"><input type="radio" name="user" value="individual">개인</label>
@@ -311,7 +327,7 @@
                         <label class="payinfo"><input type="radio" name="receipt" value="no">아니오</label>
                     </li>
                 </ul>
-                <div>
+                <div class="btn"> 
                 <button id="cancel">취소</button>
                 <button id="payment">결제</button>
                 </div>
@@ -336,7 +352,9 @@
                         <input id="cvc" type="text" maxlength="3" placeholder="CVC" style="width: 90px;">
                     </label>
                 </label>
-              <br/>  <img src="images/pngegg.png" style="width: 200px;"><br/>
+              <br/>  <img src="images/pngegg.png" style="width: 300px;"><br/><br/>
+               
+             
                 <button id="close">취소</button>
                 <button id="next">결제</button>
         </div>
@@ -362,4 +380,5 @@
         <p>Copyright. All rights reserved.</p>
     </footer>
 </body>
+<script src="css_js/main.js"></script>
 </html>
