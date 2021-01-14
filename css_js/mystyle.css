@@ -239,7 +239,7 @@
   cursor: pointer;
   margin: 10px;
   position: relative;
-  left:40px;
+  /* left:40px; */
 
 }
 
@@ -251,7 +251,7 @@
  
   left:270px;
   cursor: pointer;
-  padding:5px;
+  margin:10px;
   text-align: center;
 }
 
