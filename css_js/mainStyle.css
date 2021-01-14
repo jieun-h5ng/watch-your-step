@@ -142,9 +142,10 @@ body {
 }
 .content_print h2:nth-child(2) {
   color: aqua;
-  animation: animate 1s ease-in-out infinite;
 }
 
+/*   animation: animate 1s ease-in-out infinite; */
+/* 
 @keyframes animate {
   50% {
     clip-path: polygon(
@@ -175,7 +176,7 @@ body {
     );
   }
 }
-
+ */
 /* .water:hover {
   color: var(--hover-color);
 } */
