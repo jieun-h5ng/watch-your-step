@@ -1,0 +1,162 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Water Footprint Project</title>
+    <script src="css_js/main.js" defer></script>
+    <script src="css_js/sound.js" defer></script>
+    <link rel="stylesheet" href="css_js/style.css">
+    <link rel="stylesheet" href="css_js/definition.css">
+
+    <script src="https://kit.fontawesome.com/2fc57dd2db.js" crossorigin="anonymous"></script>
+    <link rel="preconnect" href="https://fonts.gstatic.com">
+    <link
+        href="https://fonts.googleapis.com/css2?family=Noto+Sans+KR:wght@100;300;400;500;700;900&family=Roboto:ital,wght@0,100;0,300;0,400;0,500;0,700;0,900;1,100;1,300;1,400;1,500;1,700;1,900&display=swap"
+        rel="stylesheet">
+
+</head>
+
+<body>
+    <header>
+        <nav class="index">
+            <!-- <i class="fas fa-tint"></i> -->
+
+            <img src="images/waterdrop.png" id="waterdrop">
+            <audio id="player" loop>
+                <source src="images/WaterDrop.mp4" />
+            </audio>
+
+
+            <a href="main.html" class="logo">
+                <img src="images/logo.svg">
+            </a>
+
+            <a href="#" class="index_bar">
+                <img src="images/index.png">
+            </a>
+
+        </nav>
+    </header>
+
+    <nav>
+        <ul class="index_menu">
+            <li><a href="waterFootprint.html">물 발자국이란?</a></li>
+            <hr align="right" style="border: solid 1px black;">
+            <li><a href="WaterFootprint_cal.html">발자국 계산기</a></li>
+            <hr align="right" style="border: solid 1px black;">
+            <li><a href="WaterFootprint_reduce.html">발자국 줄이기</a></li>
+            <hr align="right" style="border: solid 1px black;">
+            <li><a href="WaterFootprint_donate.html">기부하기</a></li>
+            <hr align="right" style="border: solid 1px black;">
+            <li><a href="aboutUs.html">만든 사람들</a></li>
+            <!-- <hr align="right" style="border: solid 1.5px;"> -->
+        </ul>
+    </nav>
+
+    <section class="mouse">
+        <div id="cursor"></div>
+        <script>
+            const cursor = document.querySelector('#cursor');
+            document.addEventListener('mousemove', (e) => {
+                cursor.style.left = e.pageX + 'px';
+                cursor.style.top = e.pageY + 'px';
+            })
+        </script>
+    </section>
+
+
+    <div class="definition">
+        What is a <br>
+        <span class="def_line">WATER FOOTPRINT</span>? <br>
+        <span class="def_line">물 발자국</span>이란?<br>
+    </div>
+
+    <div class="main_text">
+        <p>
+            물 발자국이란 제품의 원료, 제조, 유통, 사용과 폐기까지 모든 과정에서 사용되는
+            물의 총 사용량을 말합니다. <br>
+            물 발자국의 수치가 높을수록 사용된 물의 양이 많다고 볼 수 있고,
+            수치가 낮을수록 사용된 물의 양이 적다고 볼 수 있습니다.
+            이를 통해 제품의 생산, 소비 단계별 물이용의 효율성을 평가할 수 있고,
+            선진국과 저개발국 사이의 물사용 불균형을 설명할 수 있습니다.
+        </p>
+        <br><br>
+
+        <div class="video-container">
+            <iframe width="100%" src="https://www.youtube.com/embed/6JhlEg7G4MY?start=2" frameborder="0"
+                allowfullscreen></iframe>
+        </div>
+
+        <!-- <iframe width=100vh; height="100vh" src="https://www.youtube.com/embed/6JhlEg7G4MY?start=2" frameborder="0"
+            allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture"
+            allowfullscreen></iframe> -->
+    </div>
+    <div class="main_text">
+        <!-- <h3>3가지 물 발자국 </h3> -->
+        <p>
+            물 발자국은
+            <span style="color: rgb(38, 255, 121); font-weight: bolder;">녹색</span> •
+            <span style="color: rgb(14, 167, 255); font-weight: bolder;">청색</span> •
+            <span style="color: rgb(119, 119, 119); font-weight: bolder;">회색</span>의 세 가지 구성요소로 정의됩니다. <br>
+            이들 구성 요소는 강우량, 토양의 수분량 또는 지표수, 지하수, 오염물질 제거에 필요한 물의 양을 기술함으로써 물 사용량에 대한 종합적인
+            틀을 제공합니다.
+
+            <br><br>
+        </p>
+        <ul class="kinds">
+            <li>
+                <span id="green">녹색 물 발자국 Green water footprint</span> <br>
+                <p>
+                    토양 내 식물의 뿌리 영역에 저장된 물의 증발산량을 총괄하여 정의됩니다. 이는 농업, 원예, 임산물과 연관이 있는
+                    요소입니다.
+                    <br><br>
+
+                </p>
+                <!-- <p>
+                    Green water footprint is water from precipitation that is stored in the root zone of the soil and
+                    evaporated, transpired or incorporated by plants. It is particularly relevant for agricultural,
+                    horticultural and forestry products.
+                </p> -->
+
+            </li>
+            <li>
+                <span id="blue">청색 물 발자국 Blue water footprint</span> <br>
+                <p>
+                    지표수나 지하수로부터 물의 순환과정을 통해 유통되는 물을 총괄합니다. 이는 농업용수,산업용수 및 생활용수를 포함합니다.
+                    <br><br>
+                </p>
+                <!-- <p>
+                    Blue water footprint is water that has been sourced from surface or groundwater resources and is
+                    either evaporated, incorporated into a product or taken from one body of water and returned to
+                    another, or returned at a different time. Irrigated agriculture, industry
+                    and domestic water use can
+                    each have a blue water footprint.
+                </p> -->
+
+            </li>
+            <li>
+                <span id="gray">회색 물 발자국 Grey water footprint</span> <br>
+                <p>
+                    오염물질을 수질기준 충족을 위해 제거하는데 필요한 담수의 양을 말합니다. 이는 직접적으로 관로 형태의 배출 및 간접적으로
+                    토양 유출, 침출, 불투수층 또는 기타 확산원을 통해 배출되는 점오염원을 고려합니다.
+                </p>
+                <!-- <p>
+                    Grey water footprint is the amount of fresh water required to assimilate pollutants to meet specific
+                    water quality standards. The grey water footprint considers point-source pollution discharged to a
+                    freshwater resource directly through a pipe or indirectly through runoff or leaching from the soil,
+                    impervious surfaces, or other diffuse sources.
+                </p> -->
+
+            </li>
+        </ul>
+    </div>
+    <br><br>
+    <div class="link">
+        유네스코 물 관련 교육기관인 IHE에서 제공하는 홈페이지에서는 좀 더 다양한 정보를 찾아보실 수 있습니다. <br>
+        <a href="https://www.waterfootprint.org/en/" target="_blank"> Water Footprint Network</a>를 방문하여 더 많은 정보를 찾아보세요.
+    </div>
+</body>
+
+</html>
