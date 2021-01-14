@@ -9,6 +9,18 @@ body {
   cursor: none;
 }
 
+p {
+  text-indent: 30px;
+}
+
+a {
+  text-decoration: none;
+  color: black;
+}
+ul {
+  list-style: none;
+}
+
 .main_text {
   font-size: 22px;
   line-height: 200%;
@@ -137,22 +149,6 @@ body {
   width: 100%;
   opacity: 1;
 }
-
-/* .definition li a::before {
-  content: "";
-  height: 5px;
-  width: 50px;
-  border-radius: 10px;
-  transition: 0.3s ease;
-  position: absolute;
-  bottom: 0;
-  left: 0;
-}
-
-.definition li a:hover::before {
-  width: 100%;
-  background-color: aqua;
-} */
 
 @media screen and (max-width: 800px) {
   .definition {

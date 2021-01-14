@@ -3,8 +3,18 @@ body {
   cursor: none;
 }
 
+a {
+  text-decoration: none;
+  color: black;
+}
+
+ul {
+  list-style: none;
+}
+
 li {
   font-size: 25px;
+  text-align: center;
 }
 
 #name {
@@ -80,13 +90,9 @@ li {
   transition: 0.2s ease-in-out;
 }
 
-.personalInfo li {
+/* .personalInfo li {
   z-index: 3;
-}
-
-li {
-  text-align: center;
-}
+} */
 
 @media screen and (max-width: 800px) {
   li {

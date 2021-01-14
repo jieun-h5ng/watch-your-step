@@ -4,14 +4,9 @@
   margin: 0;
   padding: 0;
 }
-.fa-tint {
-  color: aqua;
-}
 
 .index {
   width: 90vw;
-  /*  height: 30%; */
-  /* z-index: 5; */
   display: flex;
   margin: auto;
   justify-content: space-between;
@@ -21,9 +16,6 @@
   top: 0;
   left: 0;
   right: 0;
-  /* 사파리 sticky */
-  /* position: -webkit-sticky;
-  position: sticky; */
   position: fixed;
   padding: 20px 40px;
 }
@@ -36,9 +28,17 @@
 .index_menu {
   display: none;
   background-color: rgb(255, 255, 255, 0.7);
-  /* margin-right: 20px;*/
   padding-left: 20px;
   padding-right: 20px;
+}
+
+.index_menu a {
+  text-decoration: none;
+  color: black;
+}
+
+.index_list ul {
+  list-style: none;
 }
 
 .index_menu a:hover {
@@ -46,7 +46,6 @@
 }
 
 .index_menu li {
-  /* z-index: 4; */
   display: block;
   font-weight: bolder;
   width: 160px;
@@ -59,10 +58,7 @@
   display: block;
   right: 50px;
   color: black;
-  /* margin-right: 40px; */
   position: fixed;
-  /* position: -webkit-sticky;
-  position: sticky; */
   top: 73px;
 }
 
@@ -72,18 +68,6 @@
   font-size: 100px;
 }
 
-.main_text p {
-  text-indent: 30px;
-}
-
-a {
-  text-decoration: none;
-  color: black;
-}
-
-ul {
-  list-style: none;
-}
 /* 비디오 반응형 */
 .video-container {
   position: relative;
