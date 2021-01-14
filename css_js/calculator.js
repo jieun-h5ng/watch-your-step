@@ -1,3 +1,4 @@
+
 $(document).ready(function () {
 
     var $result = $("#result");
@@ -145,12 +146,12 @@ $(document).ready(function () {
 
     function calculator(wf) {
         var str = "";
-        str += "당신이 오늘 남긴 물발자국은 " + wf + "L 입니다.<br/>"
-        str += "대한민국 성인 1인 평균 하루 물발자국: 5013L<br/>"
+        str += "당신이 오늘 남긴 물발자국은 <br/> <span id='avg'>" + wf + " L</span><br/>"
+        str += "대한민국 성인 1인 평균 하루 물발자국은 '5013 L' 입니다<br/>"
         if (wf >= 5013) {
-            str += "물 발자국을 조금만 줄여보는 건 어떨까요? -> 물발자국 지우는 방법 알아보기";
+            str += "물 발자국을 조금만 줄여보는 건 어떨까요? ";
         } else {
-            str += "잘하고 계시네요 ! 물발자국 지우기 실천에 동참해주세요";
+            str += "잘하고 계시네요 ! 친구들에게도 물발자국 지우기 실천을 알려주세요";
         }
         $("#result p").html(str);
 
