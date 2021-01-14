@@ -109,10 +109,11 @@
     left: 50%;
     transform: translate(-50%, -50%);
     width: 550px;
-    height: 450px;
+    height: 500px;
     background: #fff;
     z-index: 100;
     padding: 20px;
+    text-align: center;
 }
 .umodal_content ul{
     text-align: left;
@@ -166,10 +167,12 @@
     left: 50%;
     transform: translate(-50%, -50%);
     width: 550px;
-    height: 300px;
+    height: 500px;
     background: #fff;
     border: 2px solid #000;
     z-index: 100;
+    text-align: center;
+    padding: 75px 0;
 }
 .modal_content ul{
     text-align: left;
@@ -216,15 +219,16 @@
     left: 50%;
     transform: translate(-50%, -50%);
     width: 550px;
-    height: 550px;
+    height: 520px;
     background: #fff;
     border: 2px solid #000;
     z-index: 9999;
+    text-align: center;
 }
 .dmodal_content ul{
     text-align: center;
-    padding: 30px 30px;
-    margin: 20px 0;
+    padding: 0 30px;
+   
 }
 .dmodal_content label div {
     position: fixed;
@@ -253,7 +257,7 @@
     background-color: #ffffff; 
     border: none;
     color: #008cba;
-    padding: 16px 32px;
+    padding: 10px 23px;
     text-align: center;
     text-decoration: none;
     display: inline-block;
@@ -274,8 +278,6 @@
 
 #cancel {
     background-color: #ffffff; 
-    border: none;
-    color: #ba3500;
     padding: 8px 12px;
     text-align: center;
     text-decoration: none;
@@ -284,12 +286,10 @@
     margin: 2px 2px; 
     transition-duration: 0.4s;
     cursor: pointer; 
-}
-#cancel{
-    background-color: #fff;
     color: #000;
     border: 2px solid #ba3500;
 }
+
 #cancel:hover{
     background-color: #ba3500;
     color: #fff;
@@ -297,8 +297,6 @@
 
 #payment {
     background-color: #ffffff; 
-    border: none;
-    color: #008cba;
     padding: 8px 12px;
     text-align: left;
     text-decoration: none;
@@ -307,13 +305,11 @@
     margin: 2px 2px; 
     transition-duration: 0.4s;
     cursor: pointer; 
-
-}
-#payment{
-    background-color: #fff;
     color: #000;
     border: 2px solid #008cba;
+
 }
+
 #payment:hover{
     background-color: #008cba;
     color: #fff;
@@ -322,8 +318,6 @@
 
 #close {
     background-color: #ffffff; 
-    border: none;
-    color: #ba3500;
     padding: 8px 12px;
     text-align: center;
     text-decoration: none;
@@ -332,12 +326,10 @@
     margin: 2px 2px; 
     transition-duration: 0.4s;
     cursor: pointer; 
-}
-#close{
-    background-color: #fff;
     color: #000;
     border: 2px solid #ba3500;
 }
+
 #close:hover{
     background-color: #ba3500;
     color: #fff;
@@ -346,8 +338,6 @@
 
 #next {
     background-color: #ffffff; 
-    border: none;
-    color: #008cba;
     padding: 8px 12px;
     text-align: left;
     text-decoration: none;
@@ -356,12 +346,10 @@
     margin: 2px 2px; 
     transition-duration: 0.4s;
     cursor: pointer; 
-}
-#next{
-    background-color: #fff;
     color: #000;
     border: 2px solid #008cba;
 }
+
 #next:hover{
     background-color: #008cba;
     color: #fff;
@@ -369,8 +357,6 @@
 
 #check {
     background-color: #ffffff; 
-    border: none;
-    color: #008cba;
     padding: 8px 12px;
     text-align: left;
     text-decoration: none;
@@ -379,12 +365,10 @@
     margin: 2px 2px; 
     transition-duration: 0.4s;
     cursor: pointer; 
-}
-#check{
-    background-color: #fff;
     color: #000;
     border: 2px solid #008cba;
 }
+
 #check:hover{
     background-color: #008cba;
     color: #fff;
