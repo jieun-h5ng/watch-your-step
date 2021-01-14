@@ -20,8 +20,8 @@
 .gallery-section h1 {
   text-align: left;
   padding-left: 135px;
-  font-size: 30pt;
-  font-weight: 750;
+  font-size: 45pt; 
+  font-weight: 700;
   background-color: (255, 255, 255, 0.1);
   margin-bottom: 40px;
 }
@@ -30,9 +30,10 @@
 #subtitle {
   color: rgb(0, 0, 0);
   margin-top: 10px;
-  font-size: 14px;
+  font-size: 16px;
   text-align: left;
   padding-left: 135px;
+  padding-bottom: 80px;
 }
 
 #subcomment {
@@ -53,7 +54,7 @@
   font-size: 14px;
   font-weight: 500;
   color: rgb(0, 0, 0);
-  margin: 20px 10px;
+  margin: 40px 10px;
   display: inline-flex;
   flex-wrap: wrap;
   margin: 10px; 
