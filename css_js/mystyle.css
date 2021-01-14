@@ -1,14 +1,14 @@
 * {
-  box-sizing: border-box;
   text-decoration: none;
   user-select: none;
   font-family: "Noto Sans KR", sans-serif;
   font-family: "Roboto", sans-serif;
 }
+
 .gallery-section {
   width: 100%;
   margin: 100px;
-  padding: 100px 0;
+  padding: 10px 0;
 }
 
 .inner-width {
@@ -20,7 +20,7 @@
 /* 타이틀 */
 .gallery-section h1 {
   text-align: left;
-  padding-top:50px;
+  padding-top:130px;
   padding-left: 135px;
   font-size: 60pt; 
 
