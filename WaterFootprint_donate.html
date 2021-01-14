@@ -3,13 +3,16 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Wach your step! 후원페이지</title>    
+    <title>Wach your step! 후원페이지</title>  
+
     <link rel="stylesheet" href="css_js/style.css" type="text/css">
     <link rel="stylesheet" href="css_js/testStyle1.css" type="text/css">
+
     <link rel="preconnect" href="https://fonts.gstatic.com">
   
     <script src="css_js/main.js"></script>
     <script src="css_js/jquery-1.12.4.min.js"></script>
+
     <script>
         // 후원하기 누름
         $(document).ready(function () {
@@ -118,7 +121,7 @@
             <!-- <i class="fas fa-tint"></i> -->
 
             <img src="images/waterdrop.png" id="waterdrop">
-            <audio id="player">
+            <audio id="player" loop>
                 <source src="images/WaterDrop.mp4" />
             </audio>
 
@@ -135,15 +138,15 @@
         <nav>
             <ul class="index_menu">
                 <li><a href="waterFootprint.html">물 발자국이란?</a></li>
-                <hr align="right" style="border: solid 1px black;">
+                <hr text-align="right" style="border: solid 1px black;">
                 <li><a href="WaterFootprint_cal.html">발자국 계산기</a></li>
-                <hr align="right" style="border: solid 1px black;">
+                <hr text-align="right" style="border: solid 1px black;">
                 <li><a href="WaterFootprint_reduce.html">발자국 줄이기</a></li>
-                <hr align="right" style="border: solid 1px black;">
+                <hr text-align="right" style="border: solid 1px black;">
                 <li><a href="#">기부하기</a></li>
-                <hr align="right" style="border: solid 1px black;">
+                <hr text-align="right" style="border: solid 1px black;">
                 <li><a href="aboutUs.html">만든 사람들</a></li>
-                <!— <hr align="right" style="border: solid 1.5px;"> —>
+                <!-- <hr align="right" style="border: solid 1.5px;"> -->
             </ul>
         </nav>
     </header>
@@ -163,44 +166,46 @@
             <div class="gallerylist">
                 <ul>
                     <li>
+                        <a href="">
                             <div>
                                 <div class="screen">
-                                    <div class="top">| 아프리카 우물 파기 사업 지원</div>
-                                    <div class="bottom">극심한 물 문제를 겪고 있는 아프리카의 식수문제를 해결하기</br>위해 후원금을 기부하여 우물을 선물합니다</div>
-                                    <img src="images/afica1.jpg">
+                                    <div class="top">ㅣ아프리카 우물 파기 사업 지원</div>
+                                    <div class="bottom">극심한 물 문제를 겪고 있는 아프리카의 식수문제를 해결하기</br>위해 후원금을 기부하여 우물을 선물합니다.</div>
+                                    <img src="images/afica1.jpg" style="height: 300px;">
                                 </div>
                             </div>
                             <div>
-                                <h3>기후에너지</h3>
+                                <h3>우물 사업 지원</h3>
                             </div>
+                        </a>
                     </li>
                     <li>
-               
+                        <a href="">
                             <div>
                                 <div class="screen">
-                                    <div class="top">ㅣ멸종위기 해양 생물 보호</div>
-                                    <div class="bottom">수질 오염과 무분별한 포획으로 멸종위기에 처한</br>해양 생물을 보호하기 위한 기부 활동을 합니다. </div>
-                                    <img src="images/turtle.jfif">
+                                    <div class="top">ㅣ멸종위기 해양 생물 보호 </div>
+                                    <div class="bottom">수질 오염과 무분별한 포획으로 멸종위기에 처한</br>해양 생물을 보호하기 위한 기부 활동을 합니다.</div>
+                                    <img src="images/turtle.jfif" style="height: 300px;">
                                 </div>
                             </div>
                             <div>
-                                <h3>해양보호</h3>
+                                <h3>멸종위기 생물 보호</h3>
                             </div>
-                 
+                        </a>
                     </li>
                     <li>
-                 
+                        <a href="">
                             <div>
                                 <div class="screen">
                                     <div class="top">ㅣ水 생태계 보호 봉사활동</div>
                                     <div class="bottom">무 분별하게 버려지는 해양 쓰레기와 水 생태계를</br>보호하기 위해 다양한 봉사활동을 진행하고 있습니다.</div>
-                                    <img src="images/help.jpg">
+                                    <img src="images/help.jpg" style="height: 300px;">
                                 </div>
                             </div>
                             <div>
-                                <h3>건강한 식품</h3>
+                                <h3>생태계 봉사활동</h3>
                             </div>
-                     
+                        </a>
                     </li>
                 </ul>
             </div>
@@ -306,8 +311,10 @@
                         <label class="payinfo"><input type="radio" name="receipt" value="no">아니오</label>
                     </li>
                 </ul>
+                <div>
                 <button id="cancel">취소</button>
                 <button id="payment">결제</button>
+                </div>
         </div>
         <div class="umodal_layer"></div>
     </div>
