@@ -25,6 +25,7 @@
     max-width: 1200px;
     width: 100%;
     margin: 0 auto;
+    margin-top: 200px;
 }
 .gallerylist ul{font-size: 0;}
 .gallerylist ul > li {
@@ -65,10 +66,10 @@
     width: 100%;
 }
 .gallerylist ul > li > a h3{
-    font-size: 14px;
+    font-size: 18px;
     text-align: center;
     padding: 20px;
-    color: #000;
+    color: #888;
 }
 .gallerylist ul > li > a:hover .top{bottom:52%;}
 .gallerylist ul > li > a:hover .bottom{top:52%;}
