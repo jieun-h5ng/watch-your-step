@@ -142,10 +142,9 @@ body {
 }
 .content_print h2:nth-child(2) {
   color: aqua;
+  animation: animate 1s ease-in-out infinite;
 }
 
-/*   animation: animate 1s ease-in-out infinite; */
-/* 
 @keyframes animate {
   50% {
     clip-path: polygon(
@@ -176,7 +175,7 @@ body {
     );
   }
 }
- */
+
 /* .water:hover {
   color: var(--hover-color);
 } */
@@ -226,12 +225,11 @@ body {
   font-style: italic;
   font-size: 7vw;
   mix-blend-mode: difference;
-  animation: shake 0.8s ease-in-out infinite;
+  /* animation: shake 0.8s ease-in-out infinite; */
 }
 
-@keyframes shake {
+/* @keyframes shake {
   0% {
-    /* transform: translate(0); */
   }
   20%,
   40%,
@@ -246,9 +244,8 @@ body {
   }
   70%,
   100% {
-    /* transform: 0; */
   }
-}
+} */
 
 @media screen and (max-width: 600px) {
   /* .step {
