@@ -248,10 +248,11 @@
 
   color: rgb(179, 173, 173);
   border:0.5px solid rgb(179, 173, 173);;
-  position: relative;
-  left:280px;
+ 
+  left:270px;
   cursor: pointer;
-  margin:5px 10px;
+  padding:5px;
+  text-align: center;
 }
 
 .modal {
