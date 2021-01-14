@@ -6,55 +6,53 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Watch Your Step! 물 발자국 계산기</title>
 
-    <script src="./css_js/jquery-1.12.4.min.js"></script>
-    <script src="./css_js/calculator.js"></script>
-    <script src="./css_js/fp_main.js"></script>
-    <script src="./css_js/sound.js" defer></script>
-    <link rel="stylesheet" href="./css_js/calculator.css">
-    <link rel="stylesheet" href="./css_js/style.css">
-    <script src="./css_js/main.js"></script>
+    
+    <script src="css_js/jquery-1.12.4.min.js"></script>
+    <script src="css_js/calculator.js"></script>
+    <script src="css_js/fp_main.js"></script>
+    <script src="css_js/sound.js" defer></script>
+    <link rel="stylesheet" href="css_js/calculator.css">
+    <link rel="stylesheet" href="css_js/style.css">
     <script src="https://cdnjs.cloudflare.com/ajax/libs/fullPage.js/2.6.6/jquery.fullPage.min.js"></script>
     <link href="https://cdnjs.cloudflare.com/ajax/libs/fullPage.js/2.6.6/jquery.fullPage.css" rel="stylesheet">
-
-
     </script>
 </head>
 
 <body>
-    <header>
-        <nav class="index">
-
-            <img src="images/waterdrop.png" id="waterdrop">
-            <audio id="player">
-                <source src="images/WaterDrop.mp4" />
-            </audio>
-            <a href="main.html" class="logo">
-                <img src="images/logo.svg">
-            </a>
-            <a href="#" class="index_bar">
-                <img src="images/index.png">
-            </a>
-        </nav>
-
-        <nav>
-            <ul class="index_menu">
-                <li><a href="waterFootprint.html">물 발자국이란?</a></li>
-                <hr text-align="right" style="border: solid 1px black;">
-                <li><a href="#">발자국 계산기</a></li>
-                <hr text-align="right" style="border: solid 1px black;">
-                <li><a href="WaterFootprint_reduce.html">발자국 줄이기</a></li>
-                <hr text-align="right" style="border: solid 1px black;">
-                <li><a href="WaterFootprint_donate.html">기부하기</a></li>
-                <hr text-align="right" style="border: solid 1px black;">
-                <li><a href="aboutUs.html">만든 사람들</a></li>
-                <!-- <hr text-align="right" style="border: solid 1.5px;">-->
-            </ul>
-        </nav>
-    </header>
-
+    
 
     <div id="fullpage">
         <div class="content section">
+            <header>
+                <nav class="index">
+        
+                    <img src="images/waterdrop.png" id="waterdrop">
+                    <audio id="player" >
+                        <source src="images/WaterDrop.mp4" />
+                    </audio>
+                    <a href="main.html" class="logo">
+                        <img src="images/logo.svg">
+                    </a>
+                    <a href="#" class="index_bar">
+                        <img src="images/index.png">
+                    </a>
+                </nav>
+        
+                <nav>
+                    <ul class="index_menu">
+                        <li><a href="waterFootprint.html">물 발자국이란?</a></li>
+                        <hr text-align="right" style="border: solid 1px black;">
+                        <li><a href="#">발자국 계산기</a></li>
+                        <hr text-align="right" style="border: solid 1px black;">
+                        <li><a href="WaterFootprint_reduce.html">발자국 줄이기</a></li>
+                        <hr text-align="right" style="border: solid 1px black;">
+                        <li><a href="WaterFootprint_donate.html">기부하기</a></li>
+                        <hr text-align="right" style="border: solid 1px black;">
+                        <li><a href="aboutUs.html">만든 사람들</a></li>
+                        <!-- <hr text-align="right" style="border: solid 1.5px;">-->
+                    </ul>
+                </nav>
+            </header>
             <div class="title">
                 <h1>WATER FOOTPRINT <br />Calculator</h1>
                 <p>Watch Your Step! Watch your daily water footprint. (스크롤 가능하면 밑으로 옮길것)</p>
@@ -239,12 +237,12 @@
                 </div>
                 <button class="finish"><span>결과보기</span></button>
             </div>
-            
+
         </div>
-        <div class="content section" id="result">
-            <div>
+        <div class="content section">
+            <div id="result">
                 <p>결과출력</p>
-                <button class="redo"><span>다시하기</span></button>
+                <button class="redo"><span id="btn-redo">다시하기</span></button>
             </div>
         </div>
     </div>
@@ -259,5 +257,6 @@
         </script>
     </section>
 </body>
-
+<script src="css_js/main.js" defer></script>
+<script src="css_js/sound.js" defer></script>
 </html>
