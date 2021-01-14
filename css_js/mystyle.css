@@ -5,7 +5,7 @@
   user-select: none;
 }
 .gallery-section {
-  width: 95%;
+  width: 100%;
   margin: 100px;
   padding-bottom: 100px;
 }
@@ -20,8 +20,8 @@
 .gallery-section h1 {
   text-align: left;
   padding-left: 135px;
-  font-size: 45pt; 
-  font-weight: 700;
+  font-size: 50pt; 
+  font-weight: 800;
   background-color: (255, 255, 255, 0.1);
   margin-bottom: 40px;
 }
@@ -30,14 +30,15 @@
 #subtitle {
   color: rgb(0, 0, 0);
   margin-top: 10px;
-  font-size: 16px;
+  font-size: 17px;
+  font-weight: 550;
   text-align: left;
   padding-left: 135px;
   padding-bottom: 80px;
+  font-family: "Noto Sans KR", sans-serif;
 }
-
 #subcomment {
-  text-align: left;
+
   padding-left: 135px;
   color: rgb(0, 0, 0);
   margin-top: 20px;
@@ -48,16 +49,18 @@
   display: flex;
   flex-wrap: wrap;
   /*영역 내 여러 줄 배치*/
-  margin: 20px 10px;
 }
 .mission {
-  font-size: 14px;
+  font-family: "Noto Sans KR", sans-serif;
+  text-align:center;
+
+  font-size: 15px;
   font-weight: 500;
   color: rgb(0, 0, 0);
   margin: 40px 10px;
   display: inline-flex;
   flex-wrap: wrap;
-  margin: 10px; 
+  margin: 50px 30px;
   justify-content: center;
 }
 
@@ -68,6 +71,7 @@
   cursor: pointer;
   justify-content: center;
   text-align: center;
+  
 }
 .checkbox + input[type="checkbox"]:checked {
   z-index: -1000;
@@ -93,9 +97,9 @@
 
 .image_comment {
   font-size: 14px;
-  font-weight: 300;
+  font-weight: 500;
   white-space: wrap;
-  color: white;
+  color: rgb(255, 255, 255);
   opacity: 1;
   cursor: pointer;
   text-align: center;
@@ -132,7 +136,7 @@
   width: 200px;
   height: 200px;
 
-  background: rgba(0, 9, 59, 0.719);
+  background: rgba(53, 54, 54, 0.822);
   color: #fff;
   display: flex;
   flex-direction: column;
