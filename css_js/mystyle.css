@@ -8,7 +8,7 @@
 .gallery-section {
   width: 100%;
   margin: 100px;
-  padding-bottom: 100px;
+  padding: 100px 0;
 }
 
 .inner-width {
