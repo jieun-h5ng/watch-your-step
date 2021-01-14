@@ -1,0 +1,104 @@
+body {
+  margin-bottom: 30px;
+  cursor: none;
+}
+
+li {
+  font-size: 25px;
+}
+
+#name {
+  font-size: 40px;
+  line-height: 180%;
+}
+
+#job {
+  font-size: 22px;
+}
+
+#nation {
+  line-height: 180%;
+}
+
+#mail {
+  font-size: 20px;
+}
+.aboutus {
+  margin: 100px 40px;
+  font-weight: bolder;
+  font-size: 60px;
+}
+
+.container {
+  text-align: center;
+  margin: auto;
+}
+
+.personalInfo {
+  display: inline-block;
+  width: 700px;
+  text-align: center;
+  justify-content: center;
+  align-items: center;
+  align-content: center;
+  margin: 0 10px;
+  /* margin-left: 40px; */
+}
+
+/* .personalInfo {
+  display: block;
+  width: 700px;
+  text-align: center;
+  justify-content: center;
+  align-items: center;
+  align-content: center;
+  margin: auto;
+} */
+
+.personalInfo ul:hover {
+  color: white;
+}
+
+.info_kk:hover {
+  background: rgb(255, 0, 255);
+  border-radius: 50% 50%;
+  transition: 0.2s ease-in-out;
+}
+.info_sj:hover {
+  background: rgb(0, 255, 170);
+  border-radius: 50% 50%;
+  transition: 0.2s ease-in-out;
+}
+.info_hm:hover {
+  background: rgb(0, 247, 255);
+  border-radius: 50% 50%;
+  transition: 0.2s ease-in-out;
+}
+.info_je:hover {
+  background: rgb(255, 166, 0);
+  border-radius: 50% 50%;
+  transition: 0.2s ease-in-out;
+}
+
+.personalInfo li {
+  z-index: 3;
+}
+
+li {
+  text-align: center;
+}
+
+@media screen and (max-width: 800px) {
+  li {
+    font-size: 20px;
+  }
+
+  #name {
+    font-size: 30px;
+    line-height: 140%;
+  }
+
+  #job {
+    font-size: 18px;
+  }
+}

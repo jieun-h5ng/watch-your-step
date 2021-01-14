@@ -1,0 +1,303 @@
+* {
+  box-sizing: border-box;
+  text-decoration: none;
+  letter-spacing: 0.3px;
+  user-select: none;
+}
+.gallery-section {
+  width: 95%;
+  margin: 100px;
+  padding-bottom: 100px;
+}
+
+.inner-width {
+  width: 100%;
+  max-width: 1200px;
+  margin: auto 0;
+}
+
+/* 타이틀 */
+.gallery-section h1 {
+  text-align: left;
+  padding-left: 135px;
+  font-size: 30pt;
+  font-weight: 750;
+  background-color: (255, 255, 255, 0.1);
+  margin-bottom: 40px;
+}
+
+
+#subtitle {
+  color: rgb(0, 0, 0);
+  margin-top: 10px;
+  font-size: 14px;
+  text-align: left;
+  padding-left: 135px;
+}
+
+#subcomment {
+  text-align: left;
+  padding-left: 135px;
+  color: rgb(0, 0, 0);
+  margin-top: 20px;
+  font-size: 14.5px;
+}
+
+.gallery-section .gallery {
+  display: flex;
+  flex-wrap: wrap;
+  /*영역 내 여러 줄 배치*/
+  margin: 20px 10px;
+}
+.mission {
+  font-size: 14px;
+  font-weight: 500;
+  color: rgb(0, 0, 0);
+  margin: 20px 10px;
+  display: inline-flex;
+  flex-wrap: wrap;
+  margin: 10px; 
+  justify-content: center;
+}
+
+.checkbox {
+  opacity: 0.9;
+  -moz-opacity: 0.9;
+  z-index: 1000;
+  cursor: pointer;
+  justify-content: center;
+  text-align: center;
+}
+.checkbox + input[type="checkbox"]:checked {
+  z-index: -1000;
+}
+.image {
+  position: relative;
+  width: 100%;
+  height: 100%;
+  margin: 20px;
+  overflow: hidden;
+
+  /* cursor: pointer; */
+}
+
+.gallery-section .iamge_img {
+  display: block;
+  width: 200px;
+  height: 200px;
+  max-width: 100%;
+  height: auto;
+  border: 2px solid rgb(110, 244, 248);
+}
+
+.image_comment {
+  font-size: 14px;
+  font-weight: 300;
+  white-space: wrap;
+  color: white;
+  opacity: 1;
+  cursor: pointer;
+  text-align: center;
+}
+
+@media screen and (max-width: 1200px) {
+  gallery-section .image {
+    width: 25%;
+  }
+}
+
+@media screen and (max-width: 960px) {
+  .gallery-section .image {
+    flex: 33.33%;
+  }
+}
+
+@media screen and (max-width: 768px) {
+  .gallery-section .image {
+    flex: 50%;
+  }
+}
+
+@media screen and (max-width: 480px) {
+  .gallery-section .image {
+    flex: 100%;
+  }
+}
+
+.image_overlay {
+  position: absolute;
+  top: 0px;
+  left: 0px;
+  width: 200px;
+  height: 200px;
+
+  background: rgba(0, 9, 59, 0.719);
+  color: #fff;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  opacity: 0;
+  transition: opacity 0.4s;
+}
+
+.image_overlay > * {
+  transform: translateY(10px);
+  transition: transform 0.4s;
+}
+
+.image_overlay:hover {
+  opacity: 1;
+}
+
+.image_overlay:hover > * {
+  transform: translateY(0);
+}
+/* 물결효과
+     #maintitle {
+        color: rgba(93, 70, 94, 0.26);
+        background-image: url(../icon/wave.jpg);
+        background-repeat: repeat-x;
+        -webkit-background-clip: text;
+        animation: animate 60s linear infinite
+    }
+
+    @keyframes animate {
+        0% {
+            background-position: left 0px top 50px;
+        }
+
+        50% {
+            background-position:left 800px top -50px;
+        }
+    } */
+
+/*선택 완료 버튼*/
+
+#open {
+  width: 100px;
+  height: 30px;
+  color: rgb(31, 28, 28);
+  position: absolute;
+  left: 700px;
+
+  background: rgb(86, 239, 250);
+  font-size: 14px bold;
+  border: none;
+  border-radius: 20px;
+  box-shadow: 0 4px 16px rgba(40, 103, 238, 0.76);
+  transition: 0.3s;
+  transform: translate(-50%, -50%);
+}
+#open:focus {
+  outline: 0;
+}
+#open:hover {
+  color: rgb(255, 255, 255);
+  cursor: pointer;
+  box-shadow: 0 2px 4px rgba(60, 60, 63, 0.623);
+}
+
+/* 모달 팝업창 효과 */
+#modal_title {
+  margin-top: 10px;
+  margin-bottom: 10px;
+  font-size: 16px;
+  text-align: center;
+ 
+}
+
+.border {
+  width: 200px;
+  height: 0.5px;
+  background: rgb(116, 111, 111);
+  margin: 0px auto;
+
+}
+
+#result{
+    font-size:14px;
+    font-weight: 530;
+   
+    color:rgb(0, 0, 0);
+    text-align: left;
+    padding-left: 50px;
+}
+
+#b1,
+#b2,
+#b3,
+#b4 {
+  
+  all: unset;
+  padding: 0;
+  border-radius: 5px;
+  cursor: pointer;
+  margin: 10px;
+  position: relative;
+  left:40px;
+
+}
+
+#close {
+
+
+  color: rgb(179, 173, 173);
+  border:0.5px solid rgb(179, 173, 173);;
+  position: relative;
+  left:260px;
+  cursor: pointer;
+}
+
+.modal {
+  position: fixed;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  z-index: 100000;
+}
+
+.modal_overlay {
+  background-color: rgba(0, 0, 0, 0.6);
+  width: 100%;
+  height: 100%;
+  position: absolute;
+}
+
+.modal_content {
+  background: linear-gradient(180deg, #cae8ee, #ffffff);
+  padding: 5px 5px;
+  position: relative;
+  width: 300px;
+  height: 380px;
+  top: 0px;
+  border-radius: 10px;
+  box-shadow: 0 4px 3px 3px #999;
+}
+
+.hidden {
+  display: none;
+}
+
+
+#sns {
+text-align:center;
+font-size:13px;
+font-weight:600;
+align-items: center;
+position:absolute;
+top:60%;
+left:6%;
+margin-top:20px;
+}
+
+#snsicon{
+    width:35px;
+    height:35px;
+   position: relative;
+   left:-40px;
+}

@@ -1,0 +1,394 @@
+* {
+    font-family: 'Noto Sans KR', sans-serif;
+    box-sizing: border-box;
+    text-decoration: none;
+    
+}
+
+.container{
+    margin: 30px 20px;
+    text-align: center;
+}
+.container h2{
+    margin-bottom: 30px;
+}
+.container ul{
+    margin: 30px 20px;
+}
+
+.content p{
+    margin: 20px;
+}
+
+/* 갤러리 효과 */
+.gallerylist{
+    max-width: 1200px;
+    width: 100%;
+    margin: 0 auto;
+}
+.gallerylist ul{font-size: 0;}
+.gallerylist ul > li {
+    display: inline-block;
+    vertical-align: top;
+    width: 33.3%;
+}
+.gallerylist ul > li > a {
+    display: block;
+    width: auto;
+    text-decoration: none;
+    margin: 5px;
+}
+.gallerylist ul > li > a .screen{
+    position: relative;
+    overflow: hidden;
+}
+.gallerylist ul > li > a .screen .top{
+    position: absolute;
+    bottom: 150%;
+    left: 30px;
+    z-index: 2;
+    color: #fff;
+    font-size: 30px;
+    font-weight: 900;
+    transition: all .35s;
+}
+.gallerylist ul > li > a .screen .bottom{
+    position: absolute;
+    top: 150%;
+    left: 30px;
+    z-index: 2;
+    color: #fff;
+    font-size: 20px;
+    transition: all .35s;
+}
+.gallerylist ul > li > a .screen img{
+    width: 100%;
+}
+.gallerylist ul > li > a h3{
+    font-size: 14px;
+    text-align: center;
+    padding: 20px;
+    color: #000;
+}
+.gallerylist ul > li > a:hover .top{bottom:52%;}
+.gallerylist ul > li > a:hover .bottom{top:52%;}
+.gallerylist ul > li > a .screen::after{
+    content: '';
+    display: block;
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    background: rgba(0, 0, 0, 0.5);
+    z-index: 1;
+    opacity: 0;
+    transition: all .35s;
+}
+.gallerylist ul > li > a:hover .screen::after{
+    opacity: 1;
+}
+
+
+
+/* 후원자정보 모달 */
+
+.umodal{
+    display: none;
+    position: relative;
+    width: 100%;
+    height: 100%;
+    z-index: 9999;       
+   
+}
+
+.umodal .umodal_content{
+    position: fixed;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    width: 550px;
+    height: 450px;
+    background: #fff;
+    z-index: 100;
+    padding: 20px;
+}
+.umodal_content ul{
+    text-align: left;
+    padding: 10px 30px;
+    border: 1px solid #ccc;
+    margin-bottom: 10px;
+}
+
+.umodal_content label div {
+    position: absolute;
+    top: 50;
+    left: 50;
+    width: 100%;
+    height: 100%;
+    z-index: 100;
+    margin: 0 auto;
+    
+}
+
+.umodal .umodal_layer{
+    position: fixed;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    background: rgba(0, 0, 0, 0.7);
+    z-index: 3;
+}
+
+/* 결제 모달 */
+#modal h2{
+    margin: 10px 0;
+}
+
+#modal{
+    display: none;
+    position: relative;
+    width: 100%;
+    height: 100%;
+    z-index: 9999;
+}
+.payinfo{
+    margin: 10px;
+    display: inline-block;
+    text-align: left;
+}
+
+#modal .modal_content{
+    position: fixed;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    width: 550px;
+    height: 300px;
+    background: #fff;
+    border: 2px solid #000;
+    z-index: 100;
+}
+.modal_content ul{
+    text-align: left;
+    padding: 10px 30px;
+    border: 1px solid #ccc;
+    margin-bottom: 10px;
+}
+.modal_content label div {
+    position: fixed;
+    top: 50;
+    left: 50;
+    width: 100%;
+    height: 100%;
+    border: 1px solid #ccc;
+    z-index: 100;
+}
+
+#modal .modal_layer{
+    position: fixed;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    background: rgba(0, 0, 0, 0.7);
+    z-index: 3;
+}
+
+/* 후원 모달 */
+#dmodal{
+    display: none;
+    position: relative;
+    width: 100%;
+    height: 100%;
+    z-index: 9999;
+    transition: all 3s;
+}
+#dmodal h2{
+    margin: 20px 0;
+}
+
+#dmodal .dmodal_content{
+    position: fixed;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    width: 550px;
+    height: 550px;
+    background: #fff;
+    border: 2px solid #000;
+    z-index: 9999;
+}
+.dmodal_content ul{
+    text-align: center;
+    padding: 30px 30px;
+    margin: 20px 0;
+}
+.dmodal_content label div {
+    position: fixed;
+    top: 50;
+    left: 50;
+    width: 100%;
+    height: 100%;
+    z-index: 100;
+}
+.dmodal_content img{
+    margin-bottom: 20px;
+}
+
+#dmodal .dmodal_layer{
+    position: fixed;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    background: rgba(0, 0, 0, 0.7);
+    z-index: 3;
+}
+
+/* 버튼 */
+.donate {
+    background-color: #ffffff; 
+    border: none;
+    color: #008cba;
+    padding: 16px 32px;
+    text-align: center;
+    text-decoration: none;
+    display: inline-block;
+    font-size: 16px;
+    margin: 4px 2px; 
+    transition-duration: 0.4s;
+    cursor: pointer; 
+}
+.donate{
+    background-color: #fff;
+    color: #000;
+    border: 2px solid #008cba;
+}
+.donate:hover{
+    background-color: #008cba;
+    color: #fff;
+}
+
+#cancel {
+    background-color: #ffffff; 
+    border: none;
+    color: #ba3500;
+    padding: 8px 12px;
+    text-align: center;
+    text-decoration: none;
+    display: inline-block;
+    font-size: 16px;
+    margin: 2px 2px; 
+    transition-duration: 0.4s;
+    cursor: pointer; 
+}
+#cancel{
+    background-color: #fff;
+    color: #000;
+    border: 2px solid #ba3500;
+}
+#cancel:hover{
+    background-color: #ba3500;
+    color: #fff;
+}
+
+#payment {
+    background-color: #ffffff; 
+    border: none;
+    color: #008cba;
+    padding: 8px 12px;
+    text-align: left;
+    text-decoration: none;
+    display: inline-block;
+    font-size: 16px;
+    margin: 2px 2px; 
+    transition-duration: 0.4s;
+    cursor: pointer; 
+
+}
+#payment{
+    background-color: #fff;
+    color: #000;
+    border: 2px solid #008cba;
+}
+#payment:hover{
+    background-color: #008cba;
+    color: #fff;
+}
+
+
+#close {
+    background-color: #ffffff; 
+    border: none;
+    color: #ba3500;
+    padding: 8px 12px;
+    text-align: center;
+    text-decoration: none;
+    display: inline-block;
+    font-size: 16px;
+    margin: 2px 2px; 
+    transition-duration: 0.4s;
+    cursor: pointer; 
+}
+#close{
+    background-color: #fff;
+    color: #000;
+    border: 2px solid #ba3500;
+}
+#close:hover{
+    background-color: #ba3500;
+    color: #fff;
+}
+
+
+#next {
+    background-color: #ffffff; 
+    border: none;
+    color: #008cba;
+    padding: 8px 12px;
+    text-align: left;
+    text-decoration: none;
+    display: inline-block;
+    font-size: 16px;
+    margin: 2px 2px; 
+    transition-duration: 0.4s;
+    cursor: pointer; 
+}
+#next{
+    background-color: #fff;
+    color: #000;
+    border: 2px solid #008cba;
+}
+#next:hover{
+    background-color: #008cba;
+    color: #fff;
+}
+
+#check {
+    background-color: #ffffff; 
+    border: none;
+    color: #008cba;
+    padding: 8px 12px;
+    text-align: left;
+    text-decoration: none;
+    display: inline-block;
+    font-size: 16px;
+    margin: 2px 2px; 
+    transition-duration: 0.4s;
+    cursor: pointer; 
+}
+#check{
+    background-color: #fff;
+    color: #000;
+    border: 2px solid #008cba;
+}
+#check:hover{
+    background-color: #008cba;
+    color: #fff;
+}
+
+
+
+

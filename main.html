@@ -1,0 +1,77 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Water Footprint Project</title>
+    <link rel="stylesheet" href="css_js/mainStyle.css">
+    <script src="css_js/main.js"></script>
+    <link rel="preconnect" href="https://fonts.gstatic.com">
+    <link
+        href="https://fonts.googleapis.com/css2?family=Noto+Sans+KR:wght@100;300;400;500;700;900&family=Roboto:ital,wght@0,100;0,300;0,400;0,500;0,700;0,900;1,100;1,300;1,400;1,500;1,700;1,900&display=swap"
+        rel="stylesheet">
+    <!-- <script src="https://kit.fontawesome.com/2fc57dd2db.js" crossorigin="anonymous"></script> -->
+
+
+
+</head>
+
+<!-- main 클릭 시 interested로 화면 이동, interested에서 클릭 시 페이지 전환 -->
+
+<body>
+    <header>
+        <nav class="step">
+            <a href="main.html">
+                <img src="images/logo.svg" class="mainlogo"></img>
+            </a>
+        </nav>
+    </header>
+
+    <!-- <h1 class="main_title">
+            <span style="line-height: 130%;">Reduce</span> <br>
+            <span id="water">WATER</span> Footprint <br>
+            Project
+        </h1> -->
+
+
+    <div class="container">
+        <div class="title reduce">REDUCE</div>
+        <div class="content">
+            <h2>WATER</h2>
+            <h2>WATER</h2>
+        </div>
+        <div class="content_print">
+            <h2>FOOTPRINT</h2>
+            <h2>FOOTPRINT</h2>
+        </div>
+        <!-- <div class="title" style="margin-top: 150px;">footprint</div> -->
+        <div class="title project">PROJECT</div>
+    </div>
+
+
+
+
+
+
+
+    <nav class="interested" onclick="location.href='waterFootprint.html'">
+        <!-- <a href="waterFootprint.html" class="interested_link"></a> -->
+        Interested?
+        <div class="cursor">Yes!</div>
+
+    </nav>
+
+    <!-- <div class="cursor">Yes!</div> -->
+    <script>
+        const cursor = document.querySelector('.cursor');
+        document.addEventListener('mousemove', (e) => {
+            cursor.style.left = e.pageX + 'px';
+            cursor.style.top = e.pageY - scrollY + 'px';
+        })
+    </script>
+
+
+</body>
+
+</html>

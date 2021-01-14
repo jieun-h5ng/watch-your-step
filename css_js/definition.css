@@ -1,0 +1,168 @@
+:root {
+  --green: rgb(38, 255, 121);
+  --blue: rgb(14, 167, 255);
+  --gray: rgb(119, 119, 119);
+}
+
+body {
+  margin-bottom: 10px;
+  cursor: none;
+}
+
+.main_text {
+  font-size: 22px;
+  line-height: 200%;
+  margin-top: 10%;
+  padding-left: 10%;
+  padding-right: 20%;
+}
+
+.link {
+  margin: 10%;
+  color: rgb(134, 134, 134);
+  font-style: italic;
+  line-height: 150%;
+}
+
+.link a:hover {
+  color: aqua;
+}
+
+.definition span:hover {
+  color: aqua;
+  transition: 0.3s ease-in-out;
+}
+
+.kinds span {
+  font-weight: bolder;
+}
+
+#green:hover {
+  color: var(--green);
+  transition: all 0.3s ease-in-out;
+}
+#blue:hover {
+  color: var(--blue);
+  transition: all 0.3s ease-in-out;
+}
+#gray:hover {
+  color: var(--gray);
+  transition: all 0.3s ease-in-out;
+}
+
+/*왼쪽에서 오른쪽으로 이동하는 에니메이션*/
+/* green */
+#green {
+  position: relative;
+}
+#green:after {
+  content: "";
+  position: absolute;
+  left: 0;
+  bottom: 1px;
+  width: 0px;
+  height: 2px;
+  margin: 5px 0 0;
+  transition: all 0.4s ease-in-out;
+  transition-duration: 0.6s;
+  opacity: 0;
+  background-color: var(--green);
+}
+#green:hover:after {
+  width: 100%;
+  opacity: 1;
+}
+/* blue */
+#blue {
+  position: relative;
+}
+#blue:after {
+  content: "";
+  position: absolute;
+  left: 0;
+  bottom: 1px;
+  width: 0px;
+  height: 2px;
+  margin: 5px 0 0;
+  transition: all 0.4s ease-in-out;
+  transition-duration: 0.6s;
+  opacity: 0;
+  background-color: var(--blue);
+}
+#blue:hover:after {
+  width: 100%;
+  opacity: 1;
+}
+
+/* gray */
+#gray {
+  position: relative;
+}
+#gray:after {
+  content: "";
+  position: absolute;
+  left: 0;
+  bottom: 1px;
+  width: 0px;
+  height: 2px;
+  margin: 5px 0 0;
+  transition: all 0.4s ease-in-out;
+  transition-duration: 0.6s;
+  opacity: 0;
+  background-color: var(--gray);
+}
+#gray:hover:after {
+  width: 100%;
+  opacity: 1;
+}
+
+/*왼쪽에서 오른쪽으로 이동하는 에니메이션*/
+.def_line {
+  position: relative;
+}
+.def_line:after {
+  content: "";
+  position: absolute;
+  left: 0;
+  bottom: 0px;
+  width: 0px;
+  height: 8px;
+  margin: 5px 0 0;
+  transition: all 0.5s ease-in-out;
+  transition-duration: 0.7s;
+  opacity: 0;
+  background-color: aqua;
+}
+.def_line:hover:after {
+  width: 100%;
+  opacity: 1;
+}
+
+/* .definition li a::before {
+  content: "";
+  height: 5px;
+  width: 50px;
+  border-radius: 10px;
+  transition: 0.3s ease;
+  position: absolute;
+  bottom: 0;
+  left: 0;
+}
+
+.definition li a:hover::before {
+  width: 100%;
+  background-color: aqua;
+} */
+
+@media screen and (max-width: 800px) {
+  .definition {
+    font-size: 10vw;
+  }
+
+  .main_text {
+    font-size: 17px;
+  }
+  .link {
+    font-size: 13px;
+  }
+}

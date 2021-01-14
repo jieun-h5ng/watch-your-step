@@ -1,0 +1,360 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Wach your step! 후원페이지</title>    
+    <link rel="stylesheet" href="css_js/style.css" type="text/css">
+    <link rel="stylesheet" href="css_js/testStyle1.css" type="text/css">
+    <link rel="preconnect" href="https://fonts.gstatic.com">
+  
+    <script src="css_js/main.js"></script>
+    <script src="css_js/jquery-1.12.4.min.js"></script>
+    <script>
+        // 후원하기 누름
+        $(document).ready(function () {
+            $(".donate").click(function () {
+                // 첫번째 모달나옴
+                $(".umodal").css("display", "block");
+            })
+            // 결제
+            $("#payment").click(function () {
+                // 첫번째모달 사라지고 두번째 모달나옴
+                $(".umodal").css("display", "none");
+                    $("#modal").css("display", "block");
+            });
+                // 첫번째 모달 꺼짐 
+            $("#cancel").click(function(){
+                $(".umodal").css("display", "none");
+            })
+            // 취소
+            $("#close").click(function () {
+                // alert("취소!")
+                $("#modal").css("display", "none");
+            });
+            // 결제     
+            $("#next").click(function () {
+                // alert("결제!")
+                $("#modal").css("display", "none");
+                setTimeout(() => {
+                    $("#dmodal").css("display", "block");                    
+                    
+                }, 2500);
+            });
+            // 확인
+            $("#check").click(function () {
+                $("#dmodal").css("display", "none");
+            });
+        });
+
+        $(function(){
+            $("#payment").on('click', function(){
+                if($("#username").val().length <1){
+                    alert("성명을 입력해주세요");
+                    $(".umodal").css("display", "block");
+                    $("#modal").css("display", "none");
+                    // $("#username").focus();
+                    // return;
+                }else if($("#userbirthday").val().length <1){
+                    alert("생년월일을 입력해주세요");
+                    $(".umodal").css("display", "block");
+                    $("#modal").css("display", "none");
+                }else if($("#usermobile2").val().length <1){
+                    alert("전화번호를 입력해주세요");
+                    $(".umodal").css("display", "block");
+                    $("#modal").css("display", "none");
+                }else if($("#usermobile3").val().length <1){
+                    alert("전화번호를 입력해주세요");
+                    $(".umodal").css("display", "block");
+                    $("#modal").css("display", "none");
+                }else if($("#adress1").val().length <1){
+                    alert("주소를 입력해주세요");
+                    $(".umodal").css("display", "block");
+                    $("#modal").css("display", "none");
+                }else if($("#mail1").val().length <1){
+                    alert("이메일을 입력해주세요");
+                    $(".umodal").css("display", "block");
+                    $("#modal").css("display", "none");
+                }
+            })
+        })
+        $(function(){
+            $("#next").on('click', function(){
+                if($("#num1").val().length<1){
+                    alert("카드번호를 입력해주세요");
+                    $("#modal").css("display", "block");
+                    $("#dmodal").css("display", "none");
+                }else if($("#num2").val().length<1){
+                    alert("카드번호를 입력해주세요");
+                    $("#modal").css("display", "block");
+                    $("#dmodal").css("display", "none");
+                }else if($("#num3").val().length<1){
+                    alert("카드번호를 입력해주세요");
+                    $("#modal").css("display", "block");
+                    $("#dmodal").css("display", "none");
+                }else if($("#num4").val().length<1){
+                    alert("카드번호를 입력해주세요");
+                    $("#modal").css("display", "block");
+                    $("#dmodal").css("display", "none");
+                }else if($("#mmyy").val().length<1){
+                    alert("카드 정보를 입력해주세요");
+                    $("#modal").css("display", "block");
+                    $("#dmodal").css("display", "none");
+                }else if($("#cvc").val().length<1){
+                    alert("카드 정보를 입력해주세요");
+                    $("#modal").css("display", "block");
+                    $("#dmodal").css("display", "none");
+                }
+            })
+        })
+
+       
+        </script>
+    
+</head>
+<body>
+    <header>
+        <nav class="index">
+            <!-- <i class="fas fa-tint"></i> -->
+
+            <img src="images/waterdrop.png" id="waterdrop">
+            <audio id="player" loop>
+                <source src="images/WaterDrop.mp4" />
+            </audio>
+
+
+            <a href="main.html" class="logo">
+                <img src="images/logo.svg">
+            </a>
+
+            <a href="#" class="index_bar">
+                <img src="images/index.png">
+            </a>
+        </nav>
+
+        <nav>
+            <ul class="index_menu">
+                <li><a href="waterFootprint.html">물 발자국이란?</a></li>
+                <hr align="right" style="border: solid 1px black;">
+                <li><a href="WaterFootprint_cal.html">발자국 계산기</a></li>
+                <hr align="right" style="border: solid 1px black;">
+                <li><a href="WaterFootprint_reduce.html">발자국 줄이기</a></li>
+                <hr align="right" style="border: solid 1px black;">
+                <li><a href="#">기부하기</a></li>
+                <hr align="right" style="border: solid 1px black;">
+                <li><a href="aboutUs.html">만든 사람들</a></li>
+                <!— <hr align="right" style="border: solid 1.5px;"> —>
+            </ul>
+        </nav>
+    </header>
+    <section class="mouse">
+        <div id="cursor"></div>
+        <script>
+            const cursor = document.querySelector('#cursor');
+            document.addEventListener('mousemove', (e) => {
+                cursor.style.left = e.pageX + 'px';
+                cursor.style.top = e.pageY + 'px';
+            })
+        </script>
+    </section>
+
+    <!-- 여기부터 후원페이지 시작 -->
+    
+            <div class="gallerylist">
+                <ul>
+                    <li>
+                        <a href="">
+                            <div>
+                                <div class="screen">
+                                    <div class="top">기후에너지</div>
+                                    <div class="bottom">EU-ETS 개선<br/>재생에너지 비중 증대<br/>탄소포집 및 저장<br/></div>
+                                    <img src="images/climate.png">
+                                </div>
+                            </div>
+                            <div>
+                                <h3>기후에너지</h3>
+                            </div>
+                        </a>
+                    </li>
+                    <li>
+                        <a href="">
+                            <div>
+                                <div class="screen">
+                                    <div class="top">해양보호</div>
+                                    <div class="bottom">플라스틱 폐기물<br/>산업 및 축산폐수<br/>화학물질</div>
+                                    <img src="images/ocean.png">
+                                </div>
+                            </div>
+                            <div>
+                                <h3>해양보호</h3>
+                            </div>
+                        </a>
+                    </li>
+                    <li>
+                        <a href="">
+                            <div>
+                                <div class="screen">
+                                    <div class="top">건강한 식품</div>
+                                    <div class="bottom">친환경식품<br/>농산물우수관리<br/>활성처리제 비사용</div>
+                                    <img src="images/helthfood.png">
+                                </div>
+                            </div>
+                            <div>
+                                <h3>건강한 식품</h3>
+                            </div>
+                        </a>
+                    </li>
+                </ul>
+            </div>
+            <div class="container">
+                <h2>Watch Your Step! 후원하기</h2>
+                <ul>
+                    <li><strong>Watch Your Step!</strong>은 물발자국 지우기 캠페인을 비롯한</li>
+                    <li>전세계 환경보호활동을 지원하는 단체입니다.</li>
+                    <li></li>
+                    <li>여러분의 따뜻한 후원이 더 나은 지구를 만들 수 있습니다.</li>
+                </ul>
+                <section class="content">
+                    <form>
+                        <label for="donate">후원금액</label> 
+                        <select id="donate">
+                            <option value="man">10,000원</option>
+                            <option value="2man">20,000원</option>
+                            <option value="3man">30,000원</option>
+                            <option value="4man">40,000원</option>
+                            <option value="5man">50,000원</option>
+                            <option value="10man">100,000원</option>
+                            <option value="50man">500,000원</option>
+                            <option value="100man">1,000,000원</option>
+                            <option value="etc">기타금액</option>
+                        </select>
+
+                      
+                            <br /><br/>
+                            <label for="etc">금액입력</label>
+                            <input id="other" type="text" style="width: 100px;" />
+                        <p>정기후원을 통하여 후원사업에 정기적으로 후원이 가능합니다.</p>
+                       
+                    </form>
+
+                    <label><input type="checkbox" name="donate" value="month"> 정기후원</label>
+                    <br />
+
+                    <button class="donate">후원하기</button>
+                    <!-- 테스트 -->
+                    <!-- <button class="btn">후원하기</button> -->
+                    <!-- 테스트 -->
+
+        </section>
+    </div>
+
+    <!-- 여기부터 처번째 모달창 시작 -->
+    <div class="umodal">
+        <div class="umodal_content">
+            <h2>후원자 기본 정보 입력</h2>
+                <br />
+                <ul>
+                    <li>
+                        <label class="payinfo"><input type="radio" name="user" value="individual">개인</label>
+                        <label class="payinfo"><input type="radio" name="user" value="group">법인또는단체</label>
+                    </li>
+                    <label for="username" class="payinfo">성명</label>
+                    <input id="username" type="text" style="width: 100px;"> 
+                  
+                    <label for="userbirthday" class="payinfo">생년월일</label>
+                    <input id="userbirthday" type="text" placeholder="예)19950922" style="width: 100px;" maxlength="8">
+                    
+                    <br/><label class="payinfo"> 휴대전화</label>
+                    <select id="usermobile" name="usermobile">
+                        <option value="010">010</option>
+                        <option value="011">011</option>
+                        <option value="016">016</option>
+                        <option value="017">017</option>
+                        <option value="018">018</option>
+                        <option value="019">019</option>
+                    </select>
+                    <input id="usermobile2" type="text" maxlength="4" style="width: 60px;">
+                    <input id="usermobile3" type="text" maxlength="4" style="width: 60px;">
+                    
+                    <br/><label for="adress1" class="payinfo">주소</label>
+                    <input id="adress1" type="text"  style="width: 200px;"> 
+
+                    <br/><label for="mail1" class="payinfo">이메일</label>
+                    <input id="mail1" type="text" style="width: 100px;">
+                    <label for="mail2">@</label>
+                    <select id="email" name="email">
+                        <option value="naver.com">naver.com</option>
+                        <option value="daum.net">daum.net</option>
+                        <option value="hanmail.net">hanmail.net</option>
+                        <option value="gmail.com">gmail.com</option>
+                        <option value="nate.com">nate.com</option>
+                        <option value="yahoo.co.kr">yahoo.co.kr</option>
+                        <option value="paran.com">paran.com</option>
+                        <option value="lycos.co.kr">lycos.co.kr</option>
+                        <option value="empal.com">empal.com</option>
+                        <option value="hotmail.com">hotmail.com</option>
+                        <option value="hanafos.com">hanafos.com</option>
+                    </select>
+                    <li>
+                        <span>소식지 받기</span>
+                        <label class="payinfo"><input type="radio" name="letter" value="yes">예</label>
+                        <label class="payinfo"><input type="radio" name="letter" value="no">아니오</label>
+                        <br/>
+                    </li>
+
+                    <li>                        
+                        <span>기부금 영수증</span>                        
+                        <label class="payinfo"><input type="radio" name="receipt" value="yes">예</label>
+                        <label class="payinfo"><input type="radio" name="receipt" value="no">아니오</label>
+                    </li>
+                </ul>
+                <button id="cancel">취소</button>
+                <button id="payment">결제</button>
+        </div>
+        <div class="umodal_layer"></div>
+    </div>
+    <!-- 여기부터 두번째 모달창 시작 -->
+    <div id="modal">
+        <div class="modal_content">
+            <h2>결제창</h2>
+                
+                <label class="payinfo">카드번호
+                    <input id="num1" type="text" maxlength="4" style="width: 100px;">
+                    <input id="num2" type="text" maxlength="4" style="width: 100px;">
+                    <input id="num3" type="text" maxlength="4" style="width: 100px;">
+                    <input id="num4" type="text" maxlength="4" style="width: 100px;">
+                </label>
+               <br/> <label class="payinfo">월 / 년도
+                    <input id="mmyy" type="text" maxlength="4" placeholder="MM/YY" style="width: 90px;">
+
+                    <label class="payinfo">CVC
+                        <input id="cvc" type="text" maxlength="3" placeholder="CVC" style="width: 90px;">
+                    </label>
+                </label>
+              <br/>  <img src="images/pngegg.png" style="width: 200px;"><br/>
+                <button id="close">취소</button>
+                <button id="next">결제</button>
+        </div>
+        <div class="modal_layer"></div>
+    </div>
+    <!-- 여기부터 세번째 모달창 시작 -->
+    <div id="dmodal">
+        <div class="dmodal_content">
+            <h2>후원해주셔서 감사합니다!</h2> <br />
+            <ul>
+                <img src="images/save.png" style="width: 200px;">
+                <li>후원자님의 선택이 헛되지 않게 올바르게 이루어지도록 하겠습니다.</li>
+                <li>전세계 환경보호를 위한 후원자님의 따뜻한 관심이</li>
+                <li>더욱 살기 좋은 나라가 되는 길이라고 생각합니다. </li>
+                <li>더 나은 내일을 위해 노력하는 Watch Your Step! 되겠습니다.</li>
+            </ul>
+            <button id="check">확인</button>
+        </div>
+        <div class="dmodal_layer"></div>
+    </div>
+
+    <footer>
+        <p>Copyright. All rights reserved.</p>
+    </footer>
+</body>
+</html>

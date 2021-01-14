@@ -1,0 +1,263 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Watch Your Step! 물 발자국 계산기</title>
+
+    <script src="./css_js/jquery-1.12.4.min.js"></script>
+    <script src="./css_js/calculator.js"></script>
+    <script src="./css_js/main.js"></script>
+    <script src="./css_js/sound.js" defer></script>
+    <link rel="stylesheet" href="./css_js/calculator.css">
+    <link rel="stylesheet" href="./css_js/style.css">
+    <script src="./css_js/main.js"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/fullPage.js/2.6.6/jquery.fullPage.min.js"></script>
+    <link href="https://cdnjs.cloudflare.com/ajax/libs/fullPage.js/2.6.6/jquery.fullPage.css" rel="stylesheet">
+
+
+    </script>
+</head>
+
+<body>
+    <header>
+        <nav class="index">
+
+            <img src="images/waterdrop.png" id="waterdrop">
+            <audio id="player" loop>
+                <source src="images/WaterDrop.mp4" />
+            </audio>
+            <a href="main.html" class="logo">
+                <img src="images/logo.svg">
+            </a>
+            <a href="#" class="index_bar">
+                <img src="images/index.png">
+            </a>
+        </nav>
+
+        <nav>
+            <ul class="index_menu">
+                <li><a href="waterFootprint.html">물 발자국이란?</a></li>
+                <hr text-align="right" style="border: solid 1px black;">
+                <li><a href="#">발자국 계산기</a></li>
+                <hr text-align="right" style="border: solid 1px black;">
+                <li><a href="WaterFootprint_reduce.html">발자국 줄이기</a></li>
+                <hr text-align="right" style="border: solid 1px black;">
+                <li><a href="WaterFootprint_donate.html">기부하기</a></li>
+                <hr text-align="right" style="border: solid 1px black;">
+                <li><a href="aboutUs.html">만든 사람들</a></li>
+                <!-- <hr text-align="right" style="border: solid 1.5px;">-->
+            </ul>
+        </nav>
+    </header>
+
+
+    <div id="fullpage">
+        <div class="content section">
+            <div class="title">
+                <h1>WATER FOOTPRINT <br />Calculator</h1>
+                <p>Watch Your Step! Watch your daily water footprint. (스크롤 가능하면 밑으로 옮길것)</p>
+                <h3>우리가 하루에 남기는 물 발자국은 얼마일까요?<br /> 생각보다 많은 물들이 우리가 먹는 음식과 입는 옷을 만들 때 사용됩니다.
+                    <br />내가 일상에서 남기는 물 발자국을 계산해보고 물발자국 지우기 캠페인에 동참해 보세요.
+                </h3>
+            </div>
+        </div>
+        <div class="content section">
+            <div class="quiz" id="q1">
+                <h3>1. 아침에 일어난 당신, 출근 전 무엇을 드시겠습니까?</h3>
+                <div class="choice">
+                    <div class="li">
+                        <img src="images/noun_Bread_1469859.png" id="bread" data-wf="40">
+                        <p>빵</p>
+                    </div>
+                    <div class="li">
+                        <img src="images/noun_rice_1389730.png" id="rice" data-wf="480">
+                        <p>따끈한 밥과 반찬</p>
+                    </div>
+                    <div class="li">
+                        <img src="images/noun_Egg_159626.png" id="egg" data-wf="196">
+                        <p>계란후라이</p>
+                    </div>
+                    <div class="li">
+                        <img src="images/noun_Coffee_3424474.png" id="coffee" data-wf="396">
+                        <p>커피 한 잔</p>
+                    </div>
+                </div>
+            </div>
+        </div>
+        <div class="content section">
+            <div class="quiz" id="q2">
+                <h3>2. 샤워는 얼마나 하는 게 좋을까요?</h3>
+                <div class="li">
+                    <div id="none" data-wf="0">오늘은 건너뛰기</div>
+                    <div id="5" data-wf="40">5~10분</div>
+                    <div id="10" data-wf="65">10~15분</div>
+                    <div id="15" data-wf="75">15분 이상</div>
+                </div>
+            </div>
+        </div>
+        <div class="content section">
+            <div class="quiz" id="q3">
+                <h3>3. 회사까지는 8km, 당신이 선호하는 출근 방법은?</h3>
+                <div class="choice">
+                    <div class="li">
+                        <img src="images/noun_walking shoes_1218469.png" id="walk" data-wf="0">
+                        <p>도보</p>
+                    </div>
+                    <div class="li">
+                        <img src="images/noun_Subway_20221.png" id="public" data-wf="3">
+                        <p>대중교통</p>
+                    </div>
+                    <div class="li">
+                        <img src="images/noun_Car_1455475.png" id="car" data-wf="28">
+                        <p>자가용</p>
+                    </div>
+                    <div class="li">
+                        <img src="images/noun_Computer_2840020.png" id="home" data-wf="0">
+                        <p>재택근무</p>
+                    </div>
+                </div>
+            </div>
+        </div>
+        <div class="content section">
+            <div class="quiz" id="q4">
+                <h3>4. 벌써 점심시간. 오늘의 점심 메뉴는?</h3>
+                <div class="choice">
+                    <div class="li">
+                        <img src="images/noun_banana_3498336.png" id="banana" data-wf="138">
+                        <p>바나나</p>
+                    </div>
+                    <div class="li">
+                        <img src="images/noun_marinate meat_2764653.png" id="chicken" data-wf="864">
+                        <p>닭갈비</p>
+                    </div>
+                    <div class="li">
+                        <img src="images/noun_Pancake_2396013.png" id="beef" data-wf="3000">
+                        <p>한우떡갈비</p>
+                    </div>
+                    <div class="li">
+                        <img src="images/noun_Hamburger_2501612.png" id="hamburger" data-wf="2500">
+                        <p>햄버거</p>
+                    </div>
+                </div>
+            </div>
+        </div>
+        <div class="content section">
+            <div class="quiz" id="q5">
+                <h3>5. 점심식사 후 입가심은 뭐로 하면 좋을까요?</h3>
+
+                <div class="choice">
+                    <div class="li">
+
+                        <img src="images/noun_Chocolate_2840014.png" id="chocolate" data-wf="2">
+                        <p>초콜릿</p>
+                    </div>
+                    <div class="li">
+                        <img src="images/noun_iced coffee_3120039.png" id="coffee" data-wf="396">
+                        <p>아메리카노</p>
+                    </div>
+                    <div class="li">
+                        <img src="images/noun_iced coffee_3120029.png" id="latte" data-wf="200">
+                        <p>달달한 라떼</p>
+                    </div>
+                    <div class="li">
+                        <img src="images/noun_Coffee_3424474.png" id="tea" data-wf="35">
+                        <p>따뜻한 차 한잔</p>
+                    </div>
+                </div>
+            </div>
+        </div>
+        <div class="content section">
+            <div class="quiz" id="q6">
+                <h3>6. 꿀같은 휴식시간, 온라인 쇼핑을 해볼까요?</h3>
+                <div class="choice">
+                    <div class="li">
+
+                        <img src="images/noun_Delete_1112231.png" id="none" data-wf="0">
+                        <p>필요 없는 건 사지 않을래요</p>
+                    </div>
+                    <div class="li">
+                        <img src="images/noun_jeans_252950.png" id="jeans" data-wf="9000">
+                        <p>청바지</p>
+                    </div>
+                    <div class="li">
+                        <img src="images/noun_t-shirt_866470.png" id="tshirt" data-wf="4000">
+                        <p>티셔츠</p>
+                    </div>
+                    <div class="li">
+                        <img src="images/noun_bag_1790127.png" id="bag" data-wf="17093">
+                        <p>명품 가죽가방</p>
+                    </div>
+                </div>
+            </div>
+        </div>
+        <div class="content section">
+            <div class="quiz" id="q7">
+                <h3>7. 드디어 퇴근! 열심히 일한 나를 위한 오늘저녁 소울푸드는?</h3>
+                <div class="choice">
+                    <div class="li">
+
+                        <img src="images/noun_pork_3625653.png" id="pork" data-wf="1200">
+                        <p>삼겹살</p>
+                    </div>
+                    <div class="li">
+                        <img src="images/noun_Pizza_3563314.png" id="pizza" data-wf="1259">
+                        <p>피자 한 판</p>
+                    </div>
+                    <div class="li">
+                        <img src="images/noun_bi bim bap_2456423.png" id="rice" data-wf="480">
+                        <p>비빔밥</p>
+                    </div>
+                    <div class="li">
+                        <img src="images/noun_fried chicken_3563193.png" id="chicken" data-wf="864">
+                        <p>치킨</p>
+                    </div>
+                </div>
+            </div>
+        </div>
+        <div class="content section">
+            <div class="quiz" id="q8">
+                <h3>8. 곁들일 음료로 마무리!</h3>
+                <div class="choice">
+                    <div class="li">
+                        <img src="images/noun_Beer Can_888569.png" id="beer" data-wf="150">
+                        <p>맥주 한 캔</p>
+                    </div>
+                    <div class="li">
+                        <img src="images/noun_alcohol_888561.png" id="wine" data-wf="109">
+                        <p>와인 한 잔</p>
+                    </div>
+                    <div class="li">
+                        <img src="images/noun_frappe_2432763.png" id="coke" data-wf="3">
+                        <p>콜라 한 잔</p>
+                    </div>
+                    <div class="li">
+                        <img src="images/noun_Delete_1112231.png" id="none" data-wf="0">
+                        <p>물이면 돼요</p>
+                    </div>
+                </div>
+                <button class="finish"><span>결과보기</span></button>
+            </div>
+            
+        </div>
+        <div class="content section" id="result">
+            <div>
+                <p>결과출력</p>
+                <button class="redo"><span>다시하기</span></button>
+            </div>
+        </div>
+    </div>
+    <section class="mouse">
+        <div id="cursor"></div>
+        <script>
+            const cursor = document.querySelector('#cursor');
+            document.addEventListener('mousemove', (e) => {
+                cursor.style.left = e.pageX + 'px';
+                cursor.style.top = e.pageY + 'px';
+            })
+        </script>
+    </section>
+</body>
+
+</html>

@@ -1,0 +1,179 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Water Footprint Project</title>
+    <script src="css_js/main.js" defer></script>
+    <script src="css_js/sound.js" defer></script>
+    <link rel="stylesheet" href="css_js/style.css">
+    <link rel="stylesheet" href="css_js/aboutus.css">
+    <script src="https://kit.fontawesome.com/2fc57dd2db.js" crossorigin="anonymous"></script>
+    <link rel="preconnect" href="https://fonts.gstatic.com">
+    <link
+        href="https://fonts.googleapis.com/css2?family=Noto+Sans+KR:wght@100;300;400;500;700;900&family=Roboto:ital,wght@0,100;0,300;0,400;0,500;0,700;0,900;1,100;1,300;1,400;1,500;1,700;1,900&display=swap"
+        rel="stylesheet">
+
+</head>
+
+<body>
+    <header>
+        <nav class="index">
+            <!-- <i class="fas fa-tint"></i> -->
+
+            <img src="images/waterdrop.png" id="waterdrop">
+            <audio id="player" loop>
+                <source src="images/WaterDrop.mp4" />
+            </audio>
+
+
+            <a href="main.html" class="logo">
+                <img src="images/logo.svg">
+            </a>
+
+            <a href="#" class="index_bar">
+                <img src="images/index.png">
+            </a>
+        </nav>
+
+        <nav>
+            <ul class="index_menu">
+                <li><a href="waterFootprint.html">물 발자국이란?</a></li>
+                <hr align="right" style="border: solid 1px black;">
+                <li><a href="WaterFootprint_cal.html">발자국 계산기</a></li>
+                <hr align="right" style="border: solid 1px black;">
+                <li><a href="WaterFootprint_reduce.html">발자국 줄이기</a></li>
+                <hr align="right" style="border: solid 1px black;">
+                <li><a href="WaterFootprint_donate.html">기부하기</a></li>
+                <hr align="right" style="border: solid 1px black;">
+                <li><a href="aboutUs.html">만든 사람들</a></li>
+                <!-- <hr align="right" style="border: solid 1.5px;"> -->
+            </ul>
+        </nav>
+    </header>
+
+    <section class="mouse">
+        <div id="cursor"></div>
+        <script>
+            const cursor = document.querySelector('#cursor');
+            document.addEventListener('mousemove', (e) => {
+                cursor.style.left = e.pageX + 'px';
+                cursor.style.top = e.pageY + 'px';
+            })
+        </script>
+    </section>
+
+    <div class="aboutus">
+        About Us <br>
+        만든 사람들
+
+    </div>
+
+    <section class="container">
+        <div class="personalInfo">
+            <ul class="info_kk">
+                <li class="photo">
+                    <img src="images/kk.png" class="personalImg">
+                </li>
+                <li id="name">
+                    <span style="font-weight: bolder; letter-spacing:0.3vw;">김가경 </span> Gakyeong Kim
+                </li>
+                <li id="job">
+                    Developer
+                    <br> <br>
+                </li>
+                <li id="nation">
+                    <span style="font-weight: bolder;">+82</span> Republic of Korea
+                </li>
+                <li id="mail">
+                    <a href="mailto:qeiqiem@gmail.com">
+                        <i class="fas fa-envelope"></i> qeiqiem@gmail.com
+                    </a>
+                    <br><br><br><br>
+                </li>
+            </ul>
+            <hr>
+        </div>
+
+        </div>
+        <div class="personalInfo">
+            <ul class="info_sj">
+                <li class="photo">
+                    <img src="images/sj.png" class="personalImg">
+                </li>
+                <li id="name">
+                    <span style="font-weight: bolder; letter-spacing:0.3vw;">김소정 </span> Sojung Kim
+                </li>
+                <li id="job">
+                    Developer
+                    <br> <br>
+                </li>
+                <li id="nation">
+                    <span style="font-weight: bolder;">+82</span> Republic of Korea
+                </li>
+                <li id="mail">
+                    <a href="mailto:122kim122so@gmail.com">
+                        <i class="fas fa-envelope"></i> 122kim122so@gmail.com
+                    </a>
+                    <br><br><br><br>
+                </li>
+            </ul>
+            <hr>
+        </div>
+
+        <div class="personalInfo">
+            <ul class="info_hm">
+                <li class="photo">
+                    <img src="images/hm.png" class="personalImg">
+                </li>
+                <li id="name">
+                    <span style="font-weight: bolder; letter-spacing:0.3vw;">천혜미 </span> Hyemi Cheon
+                </li>
+                <li id="job">
+                    Developer
+                    <br> <br>
+                </li>
+                <li id="nation">
+                    <span style="font-weight: bolder;">+82</span> Republic of Korea
+                </li>
+                <li id="mail">
+                    <a href="mailto:dear_hyemii@naver.com">
+                        <i class="fas fa-envelope"></i> dear_hyemii@naver.com
+                    </a>
+                    <br><br><br><br>
+                </li>
+            </ul>
+            <hr>
+        </div>
+
+        <div class="personalInfo">
+            <ul class="info_je">
+                <li class="photo">
+                    <img src="images/je.png" class="personalImg">
+                </li>
+                <li id="name">
+                    <span style="font-weight: bolder; letter-spacing:0.3vw;">홍지은 </span> Jieun Hong
+                </li>
+                <li id="job">
+                    Developer
+                    <br> <br>
+                </li>
+                <li id="nation">
+                    <span style="font-weight: bolder;">+82</span> Republic of Korea
+                </li>
+                <li id="mail">
+                    <a href="mailto:silverhong@naver.com">
+                        <i class="fas fa-envelope"></i> silverhong@naver.com
+                    </a>
+                    <br><br><br><br>
+                </li>
+            </ul>
+            <hr>
+        </div>
+    </section>
+
+
+</body>
+
+</html>
