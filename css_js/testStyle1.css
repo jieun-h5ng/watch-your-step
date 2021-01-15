@@ -127,7 +127,6 @@ form{}
     height: 500px;
     background: #fff;
     z-index: 100;
-    /* padding: 20px; */
     text-align: center;
 }
 .umodal_content ul{
@@ -190,7 +189,6 @@ form{}
     border: 2px solid #000;
     z-index: 100;
     text-align: center;
-    /* padding: 75px 0; */
 }
 .modal_content ul{
     text-align: left;
