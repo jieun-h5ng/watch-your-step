@@ -141,7 +141,7 @@ div.li p {
     width: auto;
     display: block;
     margin: 50px;
-    margin-bottom: 250px;
+    margin-bottom: 150px;
     padding: 20px;
     border: none;
 }
@@ -168,9 +168,11 @@ h3 {
     bottom: 100px;
     margin-top: 100px;
     margin-bottom: 100px;
-
     font-size: 30px;
     line-height: 150%;
+}
+#btns{
+    padding: 10px
 }
 #avg{
     font-size: 90px;
@@ -218,3 +220,89 @@ padding-right:25px;
         opacity: 1;
         right: 0px;
     }
+
+
+    .redo{
+        border-radius: 10px;
+        background-color: rgb(116, 142, 160);
+        color:#fff;
+        border: none;
+        text-align: center;
+        font-size: 24px;
+        padding: 25px;
+        width: 200px;
+        transition: all 0.5s;
+    margin: 0 auto;
+    margin-top: 45px;
+    position: relative;
+    display: inline;
+    }
+    
+    .redo span{
+    position: relative;
+    display: inline-block;
+    cursor: pointer;
+    transition: 0.5s;
+    }
+    .redo span:after{
+        content: '\00bb';
+        position: absolute;
+        opacity: 0;
+        top: 0;
+        right: -20px;
+        transition: 0.5s;
+    }
+    
+    .redo:hover span{
+    padding-right:25px;
+        }
+        .redo:hover span:after{
+            opacity: 1;
+            right: 0px;
+        }
+
+
+
+        
+    .goto{
+        border-radius: 10px;
+        background-color: rgb(70, 178, 255);
+        color:#fff;
+        border: none;
+        text-align: center;
+        font-size: 15px;
+        padding: 15px;
+        padding-bottom: 24px;
+        height: 80px;
+        width: 200px;
+        transition: all 0.5s;
+    margin: 0 auto;
+    margin-top: 45px;
+    position: relative;
+    display: inline;
+    }
+    
+    .goto span{
+    position: relative;
+    display: inline-block;
+    cursor: pointer;
+    transition: 0.5s;
+    }
+    .goto span:after{
+        content: '\00bb';
+        position: absolute;
+        opacity: 0;
+        top: 0;
+        right: 0px;
+        transition: 0.5s;
+    }
+    
+    .goto:hover span{
+    padding-right:25px;
+    font-size: 15px;
+        }
+        .redo:hover span:after{
+            opacity: 1;
+            font-size: 17;
+            right: 0px;
+        }

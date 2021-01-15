@@ -143,11 +143,14 @@ $(document).ready(function () {
         window.scrollTo(0, 0);
         window.location.reload();
     });
+    $(".goto").click(function(){
+        location.href="WaterFootprint_reduce.html";
+    })
 
     function calculator(wf) {
         var str = "";
         str += "당신이 오늘 남긴 물발자국은 <br/> <span id='avg'>" + wf + " L</span><br/>"
-        str += "대한민국 성인 1인 평균 하루 물발자국은 '5013 L' 입니다<br/>"
+        str += "대한민국 성인 1인 평균 하루 물발자국은 <strong>'5013 L'</strong> 입니다<br/>"
         if (wf >= 5013) {
             str += "물 발자국을 조금만 줄여보는 건 어떨까요? ";
         } else {
