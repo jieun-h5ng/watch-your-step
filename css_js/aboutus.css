@@ -33,11 +33,11 @@ li {
 #mail {
   font-size: 20px;
 }
-.aboutus {
-  margin: 100px 40px;
-  font-weight: bolder;
-  font-size: 60px;
+
+.definition {
+  font-size: 80px;
 }
+
 
 .container {
   text-align: center;
