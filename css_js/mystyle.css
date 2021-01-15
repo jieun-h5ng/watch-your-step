@@ -142,16 +142,17 @@
   color: #fff;
   display: flex;
   flex-direction: column;
+  align-items: center;
   justify-content: center;
   opacity: 0;
   transition: opacity 0.4s;
 }
 
-/* .image_overlay > * {
+.image_overlay > * {
   transform: translateY(10px);
   transition: transform 0.4s;
 }
- */
+
 .image_overlay:hover {
   opacity: 1;
 }
