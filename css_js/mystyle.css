@@ -165,7 +165,9 @@
   -o-transform:scale(1.2);           /* Opera */
 }
 
-
+.image_overlay:visited{
+  background-color: aqua;
+}
 
 /*선택 완료 버튼*/
 
