@@ -244,12 +244,10 @@
 }
 
 #close {
-
-
   color: rgb(179, 173, 173);
-  border:0.5px solid rgb(179, 173, 173);;
- 
-  left:270px;
+  border:0.5px solid rgb(179, 173, 173);
+  position: relative;
+  left:260px;
   cursor: pointer;
   margin:10px;
   text-align: center;
@@ -283,6 +281,9 @@
   top: 0px;
   border-radius: 10px;
   box-shadow: 0 4px 3px 3px #999;
+  font-family: "Noto Sans KR", sans-serif;
+  font-family: "Roboto", sans-serif;
+
 }
 
 .hidden {
@@ -291,10 +292,10 @@
 
 
 #sns {
-  margin-top: 10px;
   margin-bottom: 10px;
   font-size: 15px;
   text-align: center;
+  font-weight:600;
 }
 
 #snsicon{
