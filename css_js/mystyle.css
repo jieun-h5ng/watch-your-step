@@ -136,8 +136,8 @@
   position: absolute;
   top: 0px;
   left: 0px;
-  width: 210px;
-  height: 210px;
+  width: 200px;
+  height: 200px;
   background: rgba(44, 46, 46, 0.822);
   color: #fff;
   display: flex;
@@ -158,10 +158,10 @@
 
 .image_overlay:hover > * {
   /* transform: translateY(0); */
-  transform:scale(1.1);             /*  default */
-  -webkit-transform:scale(1.1);     /*  크롬 */
-  -moz-transform:scale(1.1);       /* FireFox */
-  -o-transform:scale(1.1);           /* Opera */
+  transform:scale(1.2);             /*  default */
+  -webkit-transform:scale(1.2);     /*  크롬 */
+  -moz-transform:scale(1.2);       /* FireFox */
+  -o-transform:scale(1.2);           /* Opera */
 }
 
 
