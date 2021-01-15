@@ -92,7 +92,11 @@
   max-width: 100%;
   height: auto;
   border: 2px solid rgb(110, 244, 248);
-}
+
+  transform:image(1); 
+  transition:transform 0.5s 
+  linear;}
+
 
 .image_comment {
   font-size: 14px;
@@ -134,7 +138,6 @@
   left: 1px;
   width: 200px;
   height: 200px;
-
   background: rgba(44, 46, 46, 0.822);
   color: #fff;
   display: flex;
@@ -155,26 +158,14 @@
 }
 
 .image_overlay:hover > * {
-  transform: translateY(0);
+  /* transform: translateY(0); */
+  transform:scale(1.2);             /*  default */
+  -webkit-transform:scale(1.2);     /*  크롬 */
+  -moz-transform:scale(1.2);       /* FireFox */
+  -o-transform:scale(1.2);           /* Opera */
 }
-/* 물결효과
-     #maintitle {
-        color: rgba(93, 70, 94, 0.26);
-        background-image: url(../icon/wave.jpg);
-        background-repeat: repeat-x;
-        -webkit-background-clip: text;
-        animation: animate 60s linear infinite
-    }
 
-    @keyframes animate {
-        0% {
-            background-position: left 0px top 50px;
-        }
 
-        50% {
-            background-position:left 800px top -50px;
-        }
-    } */
 
 /*선택 완료 버튼*/
 
