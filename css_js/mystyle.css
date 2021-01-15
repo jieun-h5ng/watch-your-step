@@ -135,9 +135,9 @@
 .image_overlay {
   position: absolute;
   top: 0px;
-  left: 1px;
-  width: 200px;
-  height: 200px;
+  left: 0px;
+  width: 21px;
+  height: 210px;
   background: rgba(44, 46, 46, 0.822);
   color: #fff;
   display: flex;
